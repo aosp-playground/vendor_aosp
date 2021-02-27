@@ -1,20 +1,20 @@
-include vendor/rs/config/BoardConfigKernel.mk
-include vendor/rs/config/BoardConfigSoong.mk
-include vendor/rs/config/BoardConfigQcom.mk
-include vendor/rs/build/core/pathmap.mk
+include vendor/aosp/config/BoardConfigKernel.mk
+include vendor/aosp/config/BoardConfigSoong.mk
+include vendor/aosp/config/BoardConfigQcom.mk
+include vendor/aosp/build/core/pathmap.mk
 
 TARGET_SYSTEM_PROP += \
-    vendor/rs/config/system.prop
+    vendor/aosp/config/system.prop
 
-DEVICE_PACKAGE_OVERLAYS += vendor/rs/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay
 
 # Styles & wallpapers
 PRODUCT_COPY_FILES += \
-    vendor/rs/config/permissions/privapp_whitelist_com.android.wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp_whitelist_com.android.wallpaper.xml \
-    vendor/rs/config/permissions/default_com.android.wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default_com.android.wallpaper.xml
+    vendor/aosp/config/permissions/privapp_whitelist_com.android.wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp_whitelist_com.android.wallpaper.xml \
+    vendor/aosp/config/permissions/default_com.android.wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default_com.android.wallpaper.xml
 
 include device/lineage/sepolicy/common/sepolicy.mk
-BOARD_SEPOLICY_DIRS += vendor/rs/sepolicy
+BOARD_SEPOLICY_DIRS += vendor/aosp/sepolicy
 
 SKIP_BOOT_JARS_CHECK := true
 

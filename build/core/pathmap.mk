@@ -37,5 +37,5 @@ define project-path-for
 $(foreach n,$(1),$(patsubst $(n):%,%,$(filter $(n):%,$(pathmap_PROJ))))
 endef
 
-include vendor/rs/build/core/vendor/qcom_boards.mk
-include vendor/rs/build/core/utils.mk
+include vendor/aosp/build/core/vendor/qcom_boards.mk
+include vendor/aosp/build/core/utils.mk
