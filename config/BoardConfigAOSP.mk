@@ -13,7 +13,6 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/config/permissions/privapp_whitelist_com.android.wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp_whitelist_com.android.wallpaper.xml \
     vendor/aosp/config/permissions/default_com.android.wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default_com.android.wallpaper.xml
 
-include device/lineage/sepolicy/common/sepolicy.mk
 BOARD_SEPOLICY_DIRS += vendor/aosp/sepolicy
 
 SKIP_BOOT_JARS_CHECK := true
