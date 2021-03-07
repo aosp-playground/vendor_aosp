@@ -96,3 +96,6 @@ endif
 ifneq ($(OVERRIDE_QCOM_HARDWARE_VARIANT),)
     QCOM_HARDWARE_VARIANT := $(OVERRIDE_QCOM_HARDWARE_VARIANT)
 endif
+
+# Rules for QCOM targets
+include $(TOPDIR)vendor/aosp/build/core/qcom_target.mk
