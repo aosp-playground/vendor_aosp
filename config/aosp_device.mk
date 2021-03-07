@@ -1,7 +1,3 @@
-# RIL Wrapper
-PRODUCT_PACKAGES += \
-    libril-wrapper
-
 # Theme picker
 PRODUCT_PACKAGES += \
     ThemePicker \
