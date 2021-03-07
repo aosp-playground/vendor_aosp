@@ -6,6 +6,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     messaging
 
+PRODUCT_PACKAGES += \
+    Jelly
+
 # Stub package to be use to remove other packages
 PRODUCT_PACKAGES += \
     PackagesRemover
